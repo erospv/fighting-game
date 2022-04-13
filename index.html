@@ -1,0 +1,39 @@
+<head>
+  <link rel="stylesheet" href="index.css" media="screen" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="relative-container">
+    <div class="indicators-flex-container">
+      <!-- player health -->
+      <div class="health-bar-container" id="health-bar-container-player">
+        <div class="empty-health-container">
+          <div id="player-fading-life-container"></div>
+        </div>
+        <div id="player-health"></div>
+      </div>
+      <!-- timer -->
+      <div id="timer">
+        10
+      </div>
+      <!-- enemy health -->
+      <div class="health-bar-container" id="health-bar-container-enemy">
+        <div class="empty-health-container">
+          <div id="enemy-fading-life-container"></div>
+        </div>
+        <div id="enemy-health"></div>
+      </div>
+    </div>
+    <div id="end-game-message">TIE</div>
+    <canvas></canvas>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"
+    integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/utils.js"></script>
+  <script src="./js/classes.js"></script>
+  <script src=" index.js"></script>
+</body>

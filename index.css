@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+.relative-container {
+  position: relative;
+  display: inline-block;
+}
+
+.indicators-flex-container {
+  position: absolute;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.health-bar-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  border-top: 4px  solid #FAFAFA; 
+  border-bottom: 4px  solid #FAFAFA  
+}
+
+#health-bar-container-enemy {
+  border-right: 4px solid #FAFAFA
+}
+
+#health-bar-container-player {
+  border-left: 4px solid #FAFAFA
+}
+
+.empty-health-container {
+  position: relative;
+  background-color: transparent;
+  height: 30px;
+  width: 100%;
+}
+
+#player-health {
+  background-color: #818CF8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 30px;
+}
+
+#enemy-health {
+  height: 30px;
+  width: 100%;
+  background-color: #818CF8;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#player-fading-life-container {
+  background-color: #B91C1C;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 30px;
+}
+
+#enemy-fading-life-container {
+  background-color: #B91C1C;
+  height: 30px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#timer {
+  display: flex;
+  height: 50px;
+  width: 100px;
+  background-color: #111827 ;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  color: #FAFAFA;
+  border: 4px solid #FAFAFA;
+  font-family: 'Press Start 2P', cursive;
+
+}
+
+  #end-game-message {
+    color: white;
+    position: absolute;
+    display: none;
+    top: 35%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+}
+    
+
+
