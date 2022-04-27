@@ -291,7 +291,11 @@ window.addEventListener("keydown", (event) => {
         player.lastKey = "a";
         break;
       case "w":
-        player.velocity.y = -20;
+        if(player.velocity.y === 0) {
+          player.velocity.y = -20;
+          break;
+        }
+        
         break;
       case " ":
         player.attack();
@@ -311,8 +315,12 @@ window.addEventListener("keydown", (event) => {
         enemy.lastKey = "ArrowLeft";
         break;
       case "ArrowUp":
-        enemy.velocity.y = -20;
+        if(enemy.velocity.y === 0) {
+          enemy.velocity.y = -20;
+          break;
+        }
         break;
+        
       case "0":
         enemy.attack();
         break;
